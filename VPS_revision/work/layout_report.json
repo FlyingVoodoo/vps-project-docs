@@ -1,0 +1,314 @@
+[
+  {
+    "page": 1,
+    "content_height_pt": 650.0,
+    "scale": 1,
+    "title": "МОСКОВСКИЙ АВИАЦИОННЫЙ ИНСТИТУТ\n(НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ)"
+  },
+  {
+    "page": 2,
+    "content_height_pt": 704.5,
+    "scale": 1,
+    "title": "Содержание"
+  },
+  {
+    "page": 3,
+    "content_height_pt": 575.2,
+    "scale": 1,
+    "title": "1. Предметная область"
+  },
+  {
+    "page": 4,
+    "content_height_pt": 523.3,
+    "scale": 1,
+    "title": "2. Бизнес-правила"
+  },
+  {
+    "page": 5,
+    "content_height_pt": 516.7,
+    "scale": 1,
+    "title": "3. Декларативная модель"
+  },
+  {
+    "page": 6,
+    "content_height_pt": 687.5,
+    "scale": 1,
+    "title": "4. Инфологическая модель Чена"
+  },
+  {
+    "page": 7,
+    "content_height_pt": 724.3,
+    "scale": 1,
+    "title": "5. Реляционная модель"
+  },
+  {
+    "page": 8,
+    "content_height_pt": 535.1,
+    "scale": 1,
+    "title": "5.1. Связи и ограничения целостности"
+  },
+  {
+    "page": 9,
+    "content_height_pt": 575.1,
+    "scale": 1,
+    "title": "6. Жизненный цикл VPS"
+  },
+  {
+    "page": 10,
+    "content_height_pt": 689.0,
+    "scale": 1,
+    "title": "6.1. Диаграмма состояний"
+  },
+  {
+    "page": 11,
+    "content_height_pt": 632.8,
+    "scale": 1,
+    "title": "7. Модель функционирования: DFD"
+  },
+  {
+    "page": 12,
+    "content_height_pt": 638.1,
+    "scale": 1,
+    "title": "7.1. Контекстная диаграмма"
+  },
+  {
+    "page": 13,
+    "content_height_pt": 724.3,
+    "scale": 1,
+    "title": "7.2. Диаграмма первого уровня"
+  },
+  {
+    "page": 14,
+    "content_height_pt": 724.3,
+    "scale": 1,
+    "title": "7.2.1. Первый уровень: финансы, поддержка и аудит"
+  },
+  {
+    "page": 15,
+    "content_height_pt": 721.3,
+    "scale": 1,
+    "title": "7.3. Декомпозиция процесса аренды"
+  },
+  {
+    "page": 16,
+    "content_height_pt": 612.3,
+    "scale": 1,
+    "title": "7.4. Словарь потоков: регистрация, инфраструктура и оплата"
+  },
+  {
+    "page": 17,
+    "content_height_pt": 582.7,
+    "scale": 1,
+    "title": "7.4.1. Словарь потоков: поддержка, аудит и гипервизор"
+  },
+  {
+    "page": 18,
+    "content_height_pt": 647.6,
+    "scale": 1,
+    "title": "7.4.2. Словарь внутренних потоков и данных хранилищ"
+  },
+  {
+    "page": 19,
+    "content_height_pt": 614.1,
+    "scale": 1,
+    "title": "7.4.3. Контракты декомпозиции процесса 3.0"
+  },
+  {
+    "page": 20,
+    "content_height_pt": 545.7,
+    "scale": 1,
+    "title": "8. Процессное моделирование"
+  },
+  {
+    "page": 21,
+    "content_height_pt": 699.4,
+    "scale": 1,
+    "title": "8.1. Регистрация и ведение профиля"
+  },
+  {
+    "page": 22,
+    "content_height_pt": 597.0,
+    "scale": 1,
+    "title": "8.1.1. Регистрация: шаги, условия и исключения"
+  },
+  {
+    "page": 23,
+    "content_height_pt": 705.7,
+    "scale": 1,
+    "title": "8.2. Создание и обработка обращения"
+  },
+  {
+    "page": 24,
+    "content_height_pt": 610.0,
+    "scale": 1,
+    "title": "8.2.1. Поддержка: шаги, роли и повторное открытие"
+  },
+  {
+    "page": 25,
+    "content_height_pt": 690.9,
+    "scale": 1,
+    "title": "8.3. Удаление VPS и компенсация"
+  },
+  {
+    "page": 26,
+    "content_height_pt": 579.3,
+    "scale": 1,
+    "title": "8.3.1. Удаление: шаги и подтверждение внешнего эффекта"
+  },
+  {
+    "page": 27,
+    "content_height_pt": 537.9,
+    "scale": 1,
+    "title": "9. Архитектура системы"
+  },
+  {
+    "page": 28,
+    "content_height_pt": 724.3,
+    "scale": 1,
+    "title": "9.1. Обобщённая архитектура"
+  },
+  {
+    "page": 29,
+    "content_height_pt": 472.2,
+    "scale": 1,
+    "title": "9.2. Траектории выполнения функций"
+  },
+  {
+    "page": 30,
+    "content_height_pt": 710.1,
+    "scale": 1,
+    "title": "9.2.1. Выполнение функции управления инфраструктурой"
+  },
+  {
+    "page": 31,
+    "content_height_pt": 408.7,
+    "scale": 1,
+    "title": "9.2.2. Публикация тарифа: пошаговая траектория"
+  },
+  {
+    "page": 32,
+    "content_height_pt": 710.1,
+    "scale": 1,
+    "title": "9.2.3. Выполнение функции аренды VPS"
+  },
+  {
+    "page": 33,
+    "content_height_pt": 632.3,
+    "scale": 1,
+    "title": "9.2.4. Аренда VPS: пошаговая траектория"
+  },
+  {
+    "page": 34,
+    "content_height_pt": 710.1,
+    "scale": 1,
+    "title": "9.2.5. Выполнение функции пополнения счёта"
+  },
+  {
+    "page": 35,
+    "content_height_pt": 549.9,
+    "scale": 1,
+    "title": "9.2.6. Пополнение счёта: пошаговая траектория"
+  },
+  {
+    "page": 36,
+    "content_height_pt": 710.1,
+    "scale": 1,
+    "title": "9.2.7. Выполнение функций поддержки и аудита"
+  },
+  {
+    "page": 37,
+    "content_height_pt": 510.0,
+    "scale": 1,
+    "title": "9.2.8. Поддержка и аудит: пошаговые траектории"
+  },
+  {
+    "page": 38,
+    "content_height_pt": 629.3,
+    "scale": 1,
+    "title": "10. Технический проект C4: контекст"
+  },
+  {
+    "page": 39,
+    "content_height_pt": 712.6,
+    "scale": 1,
+    "title": "10.1. C4: контейнеры"
+  },
+  {
+    "page": 40,
+    "content_height_pt": 724.9,
+    "scale": 1,
+    "title": "10.2. C4: компоненты Backend API"
+  },
+  {
+    "page": 41,
+    "content_height_pt": 600.3,
+    "scale": 1,
+    "title": "11. Согласованность и восстановление после сбоев"
+  },
+  {
+    "page": 42,
+    "content_height_pt": 520.7,
+    "scale": 1,
+    "title": "11.1. Платежи, аудит и безопасность"
+  },
+  {
+    "page": 43,
+    "content_height_pt": 555.2,
+    "scale": 1,
+    "title": "12. Развитие и проверка полноты"
+  },
+  {
+    "page": 44,
+    "content_height_pt": 627.9,
+    "scale": 1,
+    "title": "12.1. Трассировка функций и сопоставление с образцом"
+  },
+  {
+    "page": 45,
+    "content_height_pt": 684.6,
+    "scale": 1,
+    "title": "13. Оценка качества: заинтересованные стороны"
+  },
+  {
+    "page": 46,
+    "content_height_pt": 597.9,
+    "scale": 1,
+    "title": "13.1. Расчёт сводного индекса"
+  },
+  {
+    "page": 47,
+    "content_height_pt": 544.5,
+    "scale": 1,
+    "title": "13.2. Критерии заинтересованных сторон"
+  },
+  {
+    "page": 48,
+    "content_height_pt": 502.9,
+    "scale": 1,
+    "title": "13.3. Сводная оценка характеристик ПО"
+  },
+  {
+    "page": 49,
+    "content_height_pt": 529.4,
+    "scale": 1,
+    "title": "14. Проверка и критерии приёмки"
+  },
+  {
+    "page": 50,
+    "content_height_pt": 432.2,
+    "scale": 1,
+    "title": "15. Замысел программного продукта"
+  },
+  {
+    "page": 51,
+    "content_height_pt": 469.8,
+    "scale": 1,
+    "title": "Приложение А. Словарь данных"
+  },
+  {
+    "page": 52,
+    "content_height_pt": 510.7,
+    "scale": 1,
+    "title": "Приложение Б. Журналы и служебные поля"
+  }
+]

@@ -1,0 +1,10 @@
+# Environment-owned directories and generated interpreter caches
+.git/
+.agents/
+.aws/
+.codex/
+__pycache__/
+*.pyc
+
+# Offline transfer bundle; all project documents are tracked separately
+GitHub_upload/

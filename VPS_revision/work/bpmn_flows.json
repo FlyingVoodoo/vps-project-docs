@@ -1,0 +1,436 @@
+[
+  {
+    "diagram": "06_bpmn_registration",
+    "pools": {
+      "client": "client",
+      "service": "service",
+      "cs": "client",
+      "form": "client",
+      "cw": "client",
+      "ce": "client",
+      "ss": "service",
+      "validate": "service",
+      "valid": "service",
+      "email": "service",
+      "unique": "service",
+      "create": "service",
+      "error": "service",
+      "errend": "service",
+      "txerr": "service",
+      "result": "service",
+      "se": "service"
+    },
+    "flows": [
+      {
+        "source": "cs",
+        "target": "form",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "form",
+        "target": "cw",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "cw",
+        "target": "ce",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "ss",
+        "target": "validate",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "validate",
+        "target": "valid",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "email",
+        "target": "unique",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "error",
+        "target": "errend",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "result",
+        "target": "se",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "form",
+        "target": "ss",
+        "message": true,
+        "label": "Форма"
+      },
+      {
+        "source": "valid",
+        "target": "email",
+        "message": false,
+        "label": "Да"
+      },
+      {
+        "source": "valid",
+        "target": "error",
+        "message": false,
+        "label": "Нет"
+      },
+      {
+        "source": "unique",
+        "target": "create",
+        "message": false,
+        "label": "Да"
+      },
+      {
+        "source": "unique",
+        "target": "error",
+        "message": false,
+        "label": "Нет"
+      },
+      {
+        "source": "create",
+        "target": "result",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "txerr",
+        "target": "error",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "result",
+        "target": "cw",
+        "message": true,
+        "label": "Профиль"
+      },
+      {
+        "source": "error",
+        "target": "cw",
+        "message": true,
+        "label": "Причина отказа"
+      }
+    ]
+  },
+  {
+    "diagram": "07_bpmn_support",
+    "pools": {
+      "client": "client",
+      "service": "service",
+      "cs": "client",
+      "send": "client",
+      "answer": "client",
+      "wait": "client",
+      "decisiontask": "client",
+      "accept": "client",
+      "ce": "client",
+      "ss": "service",
+      "check": "service",
+      "own": "service",
+      "reject": "service",
+      "re": "service",
+      "open": "service",
+      "assign": "service",
+      "solve": "service",
+      "decision": "service",
+      "choice": "service",
+      "close": "service",
+      "se": "service",
+      "reopen": "service",
+      "refusal": "client",
+      "refend": "client"
+    },
+    "flows": [
+      {
+        "source": "cs",
+        "target": "send",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "send",
+        "target": "wait",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "answer",
+        "target": "decisiontask",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "decisiontask",
+        "target": "accept",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "ss",
+        "target": "check",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "check",
+        "target": "own",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "reject",
+        "target": "re",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "open",
+        "target": "assign",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "assign",
+        "target": "solve",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "decision",
+        "target": "choice",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "close",
+        "target": "se",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "send",
+        "target": "ss",
+        "message": true,
+        "label": "Обращение"
+      },
+      {
+        "source": "own",
+        "target": "open",
+        "message": false,
+        "label": "Да"
+      },
+      {
+        "source": "own",
+        "target": "reject",
+        "message": false,
+        "label": "Нет"
+      },
+      {
+        "source": "wait",
+        "target": "refusal",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "wait",
+        "target": "answer",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "reject",
+        "target": "refusal",
+        "message": true,
+        "label": "Отказ"
+      },
+      {
+        "source": "refusal",
+        "target": "refend",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "solve",
+        "target": "answer",
+        "message": true,
+        "label": "Ответ"
+      },
+      {
+        "source": "accept",
+        "target": "ce",
+        "message": false,
+        "label": "Да"
+      },
+      {
+        "source": "accept",
+        "target": "answer",
+        "message": false,
+        "label": "Нет"
+      },
+      {
+        "source": "decisiontask",
+        "target": "decision",
+        "message": true,
+        "label": "Принять / повторить"
+      },
+      {
+        "source": "choice",
+        "target": "close",
+        "message": false,
+        "label": "Принять"
+      },
+      {
+        "source": "choice",
+        "target": "reopen",
+        "message": false,
+        "label": "Повторить"
+      },
+      {
+        "source": "reopen",
+        "target": "assign",
+        "message": false,
+        "label": ""
+      }
+    ]
+  },
+  {
+    "diagram": "08_bpmn_delete",
+    "pools": {
+      "client": "client",
+      "service": "service",
+      "hyper": "hyper",
+      "cs": "client",
+      "send": "client",
+      "cw": "client",
+      "ce": "client",
+      "ss": "service",
+      "mark": "service",
+      "remove": "service",
+      "hs": "hyper",
+      "actual": "hyper",
+      "he": "hyper",
+      "absent": "service",
+      "timer": "service",
+      "finish": "service",
+      "return": "service",
+      "se": "service"
+    },
+    "flows": [
+      {
+        "source": "cs",
+        "target": "send",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "send",
+        "target": "cw",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "cw",
+        "target": "ce",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "ss",
+        "target": "mark",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "actual",
+        "target": "he",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "finish",
+        "target": "return",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "return",
+        "target": "se",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "send",
+        "target": "ss",
+        "message": true,
+        "label": "Команда"
+      },
+      {
+        "source": "mark",
+        "target": "remove",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "remove",
+        "target": "hs",
+        "message": true,
+        "label": "delete / inspect"
+      },
+      {
+        "source": "hs",
+        "target": "actual",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "actual",
+        "target": "remove",
+        "message": true,
+        "label": "Фактическое состояние"
+      },
+      {
+        "source": "remove",
+        "target": "absent",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "absent",
+        "target": "finish",
+        "message": false,
+        "label": "Да"
+      },
+      {
+        "source": "absent",
+        "target": "timer",
+        "message": false,
+        "label": "Нет / неизвестно"
+      },
+      {
+        "source": "timer",
+        "target": "remove",
+        "message": false,
+        "label": ""
+      },
+      {
+        "source": "return",
+        "target": "cw",
+        "message": true,
+        "label": "Итог удаления"
+      }
+    ]
+  }
+]
